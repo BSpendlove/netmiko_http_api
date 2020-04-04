@@ -83,7 +83,7 @@ def api_device_send_command(id):
 
         output = netmiko_session.send_command(**content)
 
-        json_output = jsonify({"error": False, "send_command": "{}".format(output)})
+        json_output = jsonify({"error": False, "send_command": output})
 
         return json_output
 
@@ -101,7 +101,7 @@ def api_device_get_interfaces(id):
         "password": device_user.password})
 
     output = netmiko_session.get_interfaces()
-    netmiko_json = jsonify({"error": False, "get_interfaces": "{}".format(output)})
+    netmiko_json = jsonify({"error": False, "get_interfaces": output})
 
     if content_type == "application/json":
         return netmiko_json
