@@ -71,7 +71,7 @@ API Routes:
 
 /api/devices/1/get_interfaces
 
-![Device API get_interfaces](/screenshots/api_get_interfaces.jgp)
+![Device API get_interfaces](/screenshots/api_get_interfaces.jpg)
 
 ### Example [GET] (API)
 
